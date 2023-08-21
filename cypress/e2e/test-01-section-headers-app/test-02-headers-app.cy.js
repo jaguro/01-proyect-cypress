@@ -1,6 +1,6 @@
 /// <reference types = 'cypress' />
 
-describe('test validate to section-1',()=> {
+describe('test validate to section-1 headers',()=> {
     beforeEach(()=> {
         cy.visit('https://www.zooplus.es/')
         cy.title().should('eq','zooplus - Tu tienda online para mascotas líder en España')
@@ -48,9 +48,7 @@ describe('test validate to section-1',()=> {
         cy.get('#srh-logo').click()
     })
     it('test to validate headers app PageHome',()=> {
-       
-
-
-
+        cy.get('#srh-logo').should('be.visible')
+        .click()
     })
 })
