@@ -6,5 +6,5 @@ describe('test validate to section-1',()=> {
     })
     it('',()=> {
         
-    })
+    }) 
 })
